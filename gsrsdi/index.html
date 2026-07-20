@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fallback redirect if javascript is completely disabled -->
-    <meta http-equiv="refresh" content="5;url=https://4ak4sh.github.io/gsrsdi">
     <title>Application Moved</title>
     <style>
         body {
@@ -40,7 +38,7 @@
             font-size: 15px;
             line-height: 1.6;
             color: #888888;
-            margin: 0 0 24px 0;
+            margin: 0 0 30px 0;
         }
         .btn {
             display: inline-block;
@@ -51,20 +49,11 @@
             font-weight: 600;
             font-size: 15px;
             border-radius: 6px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             transition: opacity 0.2s ease;
         }
         .btn:hover {
             opacity: 0.9;
-        }
-        .countdown-text {
-            font-size: 14px;
-            color: #666666;
-            margin-bottom: 30px;
-        }
-        #counter {
-            font-weight: 700;
-            color: #ffffff;
         }
         .team-notice {
             border-top: 1px solid #1a1a1a;
@@ -93,37 +82,19 @@
 <body>
 
 <div class="card">
-    <h1>🌐 App Location Updated</h1>
+    <h1>App URL Updated</h1>
     <p>GSRS DI Validation Tool has permanently moved to 4ak4sh.github.io/gsrsdi.</p>
     
-    <a href="https://aakashsubramonian.github.io/gsrsdi" class="btn">Launch Application</a>
-    
-    <div class="countdown-text">
-        Redirecting automatically in <span id="counter">5</span> seconds...
-    </div>
+    <!-- Launches application cleanly in a new window/tab -->
+    <a href="https://4ak4sh.github.io/gsrsdi" class="btn" target="_blank" rel="noopener noreferrer">Launch Application</a>
 
     <div class="team-notice">
         <h2>Notice for the Team</h2>
         <ul>
-            <li>Please update your bookmarks to the new address immediately to ensure data processing pipeline consistency.</li>
-            <li>If you encounter caching errors or validation mismatch scripts, force-refresh your browser tab (Ctrl + F5).</li>
+            <li>Please update your bookmarks to the new address immediately!</li>
         </ul>
     </div>
 </div>
-
-<script>
-    var seconds = 20;
-    var target = "https://aakashsubramonian.github.io/gsrsdi";
-    
-    var interval = setInterval(function() {
-        seconds--;
-        document.getElementById("counter").textContent = seconds;
-        if (seconds <= 0) {
-            clearInterval(interval);
-            window.location.href = target;
-        }
-    }, 1000);
-</script>
 
 </body>
 </html>
